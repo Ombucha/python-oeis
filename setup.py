@@ -6,7 +6,7 @@ HERE = Path(__file__).resolve().parent
 README = (HERE / "README.rst").read_text()
 
 setup(
-    name = "oeis.py",
+    name = "oeis.python",
     version = "1.0.0",
     description = "A basic API wrapper for OEIS.",
     long_description = README,

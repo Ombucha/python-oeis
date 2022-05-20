@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "oeis.py"
+name = "oeis.python"
 version = "1.0.0"
 description = "A basic API wrapper for OEIS."
 authors = ["Mr.Brawler <omkaar.nerurkar@gmail.com>"]

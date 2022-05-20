@@ -7,10 +7,10 @@ oeis.py
 .. image:: https://img.shields.io/tokei/lines/github/pysics/oeis.py
     :target: https://github.com/Pysics/oeis.py/graphs/contributors
     :alt: lines of code
-.. image:: https://img.shields.io/pypi/v/oeis.py
-    :target: https://pypi.python.org/pypi/oeis.py
+.. image:: https://img.shields.io/pypi/v/oeis.python
+    :target: https://pypi.python.org/pypi/oeis.python
     :alt: PyPI version info
-.. image:: https://img.shields.io/pypi/pyversions/oeis.py
+.. image:: https://img.shields.io/pypi/pyversions/oeis.python
     :alt: Python version info
 
 
@@ -32,10 +32,10 @@ To install the stable version, do the following:
 .. code-block:: sh
 
     # Unix / macOS
-    python3 -m pip install "oeis.py"
+    python3 -m pip install "oeis.python"
 
     # Windows
-    py -m pip install "oeis.py"
+    py -m pip install "oeis.python"
 
 
 To install the development version, do the following:
