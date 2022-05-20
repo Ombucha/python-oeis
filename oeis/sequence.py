@@ -36,6 +36,10 @@ BASE_URL = "https://oeis.org/"
 
 class Sequence:
 
+    """
+    A class that represents a sequence.
+    """
+
     def __init__(self, a_number: str) -> None:
         self.a_number = a_number
         self.url = f"{BASE_URL}{self.a_number}"
@@ -50,7 +54,7 @@ class Sequence:
             if attribute in ("data", "offset"):
                 self.__setattr__(attribute, [int(element) for element in value.split(",")])
             elif attribute == "keywords":
-                self.__setattr__(attribute, [element for element in value.split(",")])
+                self.__setattr__(attribute, list(value.split(",")))
             else:
                 self.__setattr__(attribute, value)
 
@@ -60,6 +64,9 @@ class Sequence:
 
 
 def search(query: str) -> List[Sequence]:
+    """
+    Searches OEIS for sequences.
+    """
     data = get(f"{BASE_URL}search?q={query}&fmt=json").json()
     sequences = []
     for result in data["results"]:
