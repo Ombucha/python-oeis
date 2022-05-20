@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "oeis.py"
+version = "1.0.0"
+description = "A basic API wrapper for OEIS."
+authors = ["Mr.Brawler <omkaar.nerurkar@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/Pysics/oeis.py/"
+documentation = "https://oeis.readthedocs.io/"
+keywords = ["python", "oeis"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+packages = ["oeis"]
+
+[tool.poetry.dependencies]
+requests = "2.27.*"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Pysics/oeis.py/issues"
