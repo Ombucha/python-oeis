@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "oeis.python"
+name = "oeis.wrap"
 version = "1.0.0"
 description = "A basic API wrapper for OEIS."
 authors = ["Mr.Brawler <omkaar.nerurkar@gmail.com>"]
 license = "MIT"
 readme = "README.rst"
-repository = "https://github.com/Pysics/oeis.py/"
+repository = "https://github.com/Pysics/oeis.wrap/"
 documentation = "https://oeis.readthedocs.io/"
 keywords = ["python", "oeis"]
 classifiers = [
@@ -19,4 +19,4 @@ packages = ["oeis"]
 requests = "2.27.*"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/Pysics/oeis.py/issues"
+"Bug Tracker" = "https://github.com/Pysics/oeis.wrap/issues"

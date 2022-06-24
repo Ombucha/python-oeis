@@ -6,12 +6,12 @@ HERE = Path(__file__).resolve().parent
 README = (HERE / "README.rst").read_text()
 
 setup(
-    name = "oeis.python",
+    name = "oeis.wrap",
     version = "1.0.0",
     description = "A basic API wrapper for OEIS.",
     long_description = README,
     long_description_content_type = "text/x-rst",
-    url = "https://github.com/Pysics/oeis.py",
+    url = "https://github.com/Pysics/oeis.wrap",
     author = "Omkaar",
     author_email = "omkaar.nerurkar@gmail.com",
     license = "MIT",
