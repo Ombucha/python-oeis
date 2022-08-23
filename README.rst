@@ -1,11 +1,11 @@
 oeis.wrap
 ===========
 
-.. image:: https://img.shields.io/github/license/pysics/oeis.wrap
-    :target: https://github.com/Pysics/oeis.wrap/blob/main/LICENSE.md
+.. image:: https://img.shields.io/github/license/Infiniticity/oeis.wrap
+    :target: https://github.com/Infiniticity/oeis.wrap/blob/main/LICENSE.md
     :alt: license
-.. image:: https://img.shields.io/tokei/lines/github/pysics/oeis.wrap
-    :target: https://github.com/Pysics/oeis.wrap/graphs/contributors
+.. image:: https://img.shields.io/tokei/lines/github/Infiniticity/oeis.wrap
+    :target: https://github.com/Infiniticity/oeis.wrap/graphs/contributors
     :alt: lines of code
 .. image:: https://img.shields.io/pypi/v/oeis.wrap
     :target: https://pypi.python.org/pypi/oeis.wrap
@@ -42,7 +42,7 @@ To install the development version, do the following:
 
 .. code-block:: sh
 
-    $ git clone https://github.com/Pysics/oeis.wrap
+    $ git clone https://github.com/Infiniticity/oeis.wrap
 
 
 Links
