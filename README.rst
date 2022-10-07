@@ -2,7 +2,7 @@ python-oeis
 ===========
 
 .. image:: https://img.shields.io/github/license/Infiniticity/python-oeis
-    :target: https://github.com/Infiniticity/python-oeis/blob/main/LICENSE.md
+    :target: https://github.com/Infiniticity/python-oeis/blob/main/LICENSE
     :alt: license
 .. image:: https://img.shields.io/tokei/lines/github/Infiniticity/python-oeis
     :target: https://github.com/Infiniticity/python-oeis/graphs/contributors

@@ -38,6 +38,19 @@ class Sequence:
 
     """
     A class that represents a sequence.
+
+    :param a_number: The A-number of the sequence.
+    :type a_number: :class:`int`
+
+    :ivar a_number: The A-number of the sequence.
+    :ivar url: The URL of the sequence.
+    :ivar graph: The graph of the sequence.
+    :ivar greeting: The OEIS greeting.
+    :ivar text: The textual data of the sequence.
+
+    .. note::
+
+        There are other custom attributes which depend on the sequence.
     """
 
     def __init__(self, a_number: str) -> None:
@@ -65,7 +78,10 @@ class Sequence:
 
 def search(query: str) -> List[Sequence]:
     """
-    Searches OEIS for sequences.
+    Searches OEIS.
+
+    :param query: The query to make.
+    :type query: :class:`str`
     """
     data = get(f"{BASE_URL}search?q={query}&fmt=json").json()
     sequences = []
