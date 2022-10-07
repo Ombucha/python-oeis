@@ -1,16 +1,16 @@
-oeis.wrap
+python-oeis
 ===========
 
-.. image:: https://img.shields.io/github/license/Infiniticity/oeis.wrap
-    :target: https://github.com/Infiniticity/oeis.wrap/blob/main/LICENSE.md
+.. image:: https://img.shields.io/github/license/Infiniticity/python-oeis
+    :target: https://github.com/Infiniticity/python-oeis/blob/main/LICENSE.md
     :alt: license
-.. image:: https://img.shields.io/tokei/lines/github/Infiniticity/oeis.wrap
-    :target: https://github.com/Infiniticity/oeis.wrap/graphs/contributors
+.. image:: https://img.shields.io/tokei/lines/github/Infiniticity/python-oeis
+    :target: https://github.com/Infiniticity/python-oeis/graphs/contributors
     :alt: lines of code
-.. image:: https://img.shields.io/pypi/v/oeis.wrap
-    :target: https://pypi.python.org/pypi/oeis.wrap
+.. image:: https://img.shields.io/pypi/v/python-oeis
+    :target: https://pypi.python.org/pypi/python-oeis
     :alt: PyPI version info
-.. image:: https://img.shields.io/pypi/pyversions/oeis.wrap
+.. image:: https://img.shields.io/pypi/pyversions/python-oeis
     :alt: Python version info
 
 
@@ -32,21 +32,21 @@ To install the stable version, do the following:
 .. code-block:: sh
 
     # Unix / macOS
-    python3 -m pip install "oeis.wrap"
+    python3 -m pip install "python-oeis"
 
     # Windows
-    py -m pip install "oeis.wrap"
+    py -m pip install "python-oeis"
 
 
 To install the development version, do the following:
 
 .. code-block:: sh
 
-    $ git clone https://github.com/Infiniticity/oeis.wrap
+    $ git clone https://github.com/Infiniticity/python-oeis
 
 
 Links
 -----
 
-- `oeis <https://oeis.org/>`_
+- `OEIS <https://oeis.org/>`_
 - `Documentation <https://oeis.readthedocs.io/>`_
