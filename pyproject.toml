@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "python-oeis"
-version = "1.0.0"
+version = "1.1.0"
 description = "A basic API wrapper for OEIS."
-authors = ["Infiniticity <omkaar.nerurkar@gmail.com>"]
+authors = ["Ombucha <omkaar.nerurkar@gmail.com>"]
 license = "MIT"
 readme = "README.rst"
-repository = "https://github.com/Infiniticity/python-oeis/"
+repository = "https://github.com/Ombucha/python-oeis/"
 documentation = "https://oeis.readthedocs.io/"
-keywords = ["python", "oeis"]
+keywords = ["python", "oeis", "sequences", "math", "database"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
@@ -19,4 +19,4 @@ packages = ["oeis"]
 requests = "2.27.*"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/Infiniticity/python-oeis/issues"
+"Bug Tracker" = "https://github.com/Ombucha/python-oeis/issues"

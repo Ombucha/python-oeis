@@ -7,11 +7,11 @@ README = (HERE / "README.rst").read_text()
 
 setup(
     name = "python-oeis",
-    version = "1.0.0",
+    version = "1.1.0",
     description = "A basic API wrapper for OEIS.",
     long_description = README,
     long_description_content_type = "text/x-rst",
-    url = "https://github.com/Infiniticity/python-oeis",
+    url = "https://github.com/Ombucha/python-oeis",
     author = "Omkaar",
     author_email = "omkaar.nerurkar@gmail.com",
     license = "MIT",
