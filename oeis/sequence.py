@@ -22,7 +22,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-
 from __future__ import annotations
 
 from functools import cached_property
@@ -35,7 +34,6 @@ BASE_URL = "https://oeis.org/"
 
 
 class Sequence:
-
     """
     A class that represents a sequence.
 
@@ -58,14 +56,18 @@ class Sequence:
         self.url = f"{BASE_URL}{self.a_number}"
         self.graph = f"{self.url}/graph?png=1"
 
-        data = get(f"{BASE_URL}search?q=id:{self.a_number}&fmt=json").json()
-        self.greeting = data["greeting"]
+        data = get(f"{BASE_URL}search?q=id:{self.a_number}&fmt=json").json()[0]
 
-        special = {"xref": "cross_reference", "keyword": "keywords", "ext": "extensions"}
-        for key, value in data["results"][0].items():
+        special = {
+            "xref": "cross_reference",
+            "keyword": "keywords",
+        }
+        for key, value in data.items():
             attribute = special.get(key, key)
             if attribute in ("data", "offset"):
-                self.__setattr__(attribute, [int(element) for element in value.split(",")])
+                self.__setattr__(
+                    attribute, [int(element) for element in value.split(",")]
+                )
             elif attribute == "keywords":
                 self.__setattr__(attribute, list(value.split(",")))
             else:
@@ -85,7 +87,7 @@ def search(query: str) -> List[Sequence]:
     """
     data = get(f"{BASE_URL}search?q={query}&fmt=json").json()
     sequences = []
-    for result in data["results"]:
+    for result in data:
         number = f"A{(6 - len(str(result['number']))) * '0' + str(result['number'])}"
         sequences.append(Sequence(number))
     return sequences
