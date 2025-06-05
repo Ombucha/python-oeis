@@ -16,7 +16,7 @@ classifiers = [
 packages = ["oeis"]
 
 [tool.poetry.dependencies]
-requests = "2.27.*"
+requests = "*"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/Ombucha/python-oeis/issues"
