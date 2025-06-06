@@ -16,7 +16,7 @@
 About
 -----
 
-**python-oeis** is a Python library for exploring and retrieving integer sequences from the [Online Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/). Use it to search for sequences by keywords, fetch classic sequences like the Fibonacci numbers (A000045), primes (A000040), or your favorite obscure sequence, and access OEIS metadata programmatically.
+**python-oeis** is a Python library for exploring and retrieving integer sequences from the `Online Encyclopedia of Integer Sequences (OEIS) <https://oeis.org/>`_. Use it to search for sequences by keywords, fetch classic sequences like the Fibonacci numbers (A000045), primes (A000040), or your favorite obscure sequence, and access OEIS metadata programmatically.
 
 Requirements
 ------------
