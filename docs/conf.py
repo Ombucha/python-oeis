@@ -10,6 +10,6 @@ on_rtd = os.environ.get("READTHEDOCS") == "True"
 project = "python-oeis"
 copyright = "2025, Omkaar"
 author = "Ombucha"
-release = "1.1.0"
+release = "1.1.1"
 
 extensions = ["sphinx.ext.autodoc"]

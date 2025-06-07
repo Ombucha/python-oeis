@@ -7,7 +7,7 @@ README = (HERE / "README.rst").read_text()
 
 setup(
     name = "python-oeis",
-    version = "1.1.0",
+    version = "1.1.1",
     description = "A basic API wrapper for OEIS.",
     long_description = README,
     long_description_content_type = "text/x-rst",
