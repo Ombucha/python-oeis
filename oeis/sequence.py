@@ -59,7 +59,7 @@ class Sequence:
         data = get(f"{BASE_URL}search?q=id:{self.a_number}&fmt=json").json()[0]
 
         special = {
-            "xref": "cross_reference",
+            "xref": "cross_references",
             "keyword": "keywords",
         }
         for key, value in data.items():
@@ -73,6 +73,9 @@ class Sequence:
             else:
                 self.__setattr__(attribute, value)
 
+    def __repr__(self) -> str:
+        return f"<Sequence {self.a_number}>"
+
     @cached_property
     def text(self) -> str:
         return get(f"{BASE_URL}search?q=id:{self.a_number}&fmt=text").text
@@ -85,9 +88,18 @@ def search(query: str) -> List[Sequence]:
     :param query: The query to make.
     :type query: :class:`str`
     """
-    data = get(f"{BASE_URL}search?q={query}&fmt=json").json()
+    if query.strip() == "":
+        raise ValueError("Query cannot be an empty string.")
+
+    data_text = get(f"{BASE_URL}search?q={query}&fmt=text").text
+    if "No results." in data_text:
+        return []
+    if "Too many results." in data_text:
+        raise ValueError("Too many results. Please refine your search query.")
+
+    data_json = get(f"{BASE_URL}search?q={query}&fmt=json").json()
     sequences = []
-    for result in data:
+    for result in data_json:
         number = f"A{(6 - len(str(result['number']))) * '0' + str(result['number'])}"
         sequences.append(Sequence(number))
     return sequences
