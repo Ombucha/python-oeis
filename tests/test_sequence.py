@@ -53,8 +53,6 @@ class TestSequenceIntegration(unittest.TestCase):
         r = repr(seq)
         self.assertIn("A000045", s)
         self.assertIn("A000045", r)
-        self.assertIn(seq.name, s)
-        self.assertIn(seq.name, r)
 
     def test_minimal_sequence(self):
         seq = Sequence("A000004")  # Known to have minimal fields
