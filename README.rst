@@ -3,13 +3,13 @@
 .. image:: https://img.shields.io/pypi/v/python-oeis
     :target: https://pypi.python.org/pypi/python-oeis
     :alt: PyPI version
-.. image:: https://img.shields.io/pypi/dm/python-oeis
+.. image:: https://static.pepy.tech/personalized-badge/python-oeis?period=total&left_text=downloads&left_color=grey&right_color=red
     :target: https://pypi.python.org/pypi/python-oeis
     :alt: PyPI downloads
-.. image:: https://sloc.xyz/github/Ombucha/python-oeis
+.. image:: https://sloc.xyz/github/Ombucha/python-oeis?lower=True
     :target: https://github.com/Ombucha/python-oeis/graphs/contributors
     :alt: Lines of code
-.. image:: https://img.shields.io/github/repo-size/Ombucha/python-oeis
+.. image:: https://img.shields.io/github/repo-size/Ombucha/python-oeis?color=yellow
     :target: https://github.com/Ombucha/python-oeis
     :alt: Repository size
 
